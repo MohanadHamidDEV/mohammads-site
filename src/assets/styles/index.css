@@ -1,0 +1,180 @@
+/* Global styles */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap'); */
+/* /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-width: 150px;
+    --btn-height: 55px;
+    --btn-padding: 5px;
+    --btn-outline: none;
+    --btn-border: none;
+    --btn-border-radius: 50px;
+    --btn-color: #f8f9f8;
+    --btn-font-family: "Gabarito", sans-serif;
+    --txt-font-family: "Gabarito", sans-serif;
+    --btn-font-size: 1em !important;
+    --btn-cursor: pointer;
+    --btn-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    --btn-box-transition: box-shadow 0.3s ease-in-out;
+    --btn-text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    --btn-text-transition: text-shadow 0.3s ease;
+    /* --btn-background-color: #a93e55; */
+    --btn-background-color: rgb(148, 49, 71);
+}
+
+.en-lang {
+    font-family: "Noto Sans Display", sans-serif;
+}
+
+.ar-lang {
+    /* font-family: "Noto Sans Arabic", sans-serif; */
+    font-family: "Noto Naskh Arabic", serif;
+
+}
+
+header,
+footer {
+    /* font-family: "Changa", sans-serif; */
+    font-family: var(--txt-font-family);
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: normal;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #16243D; */
+    background-color: #032539;
+}
+
+.logo-container {
+    width: 50%;
+}
+
+.logo-container a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav-list {
+    width: 50%;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+header nav ul,
+footer nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav ul li a,
+footer nav ul li a {
+    text-decoration: none;
+    /* color: rgba(192, 168, 170); */
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+header ul,
+footer ul {
+    list-style: none;
+}
+
+header ul li a:hover,
+header ul li a:active,
+header ul li a:focus,
+footer ul li a:hover,
+footer ul li a:active,
+footer ul li a:focus {
+    color: rgb(230, 230, 230);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.primary-button {
+    width: var(--btn-width);
+    height: var(--btn-height);
+    padding: var(--btn-padding);
+    outline: var(--btn-padding);
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+    box-shadow: var(--btn-box-shadow);
+    color: var(--btn-color);
+    font-family: var(--btn-font-family);
+    font-size: var(--btn-font-size);
+    cursor: var(--btn-cursor);
+    box-shadow: var(--btn-box-shadow);
+    transition: var(--btn-box-transition);
+    text-shadow: var(--btn-text-shadow);
+    text-transition: var(--btn-text-shadow);
+    background-color: var(--btn-background-color);
+}
+
+.primary-button:hover {
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    background-color: rgb(139, 44, 65);
+}
+
+.primary-button:active {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    background-color: rgb(139, 44, 65);
+}
+
+.secondary-button {
+    width: var(--btn-width);
+    height: var(--btn-height);
+    padding: var(--btn-padding);
+    outline: 1px solid #71bdbe;
+    border: var(--btn-border);
+    border-radius: var(--btn-border-radius);
+    box-shadow: var(--btn-box-shadow);
+    color: #71bdbe;
+    font-family: var(--btn-font-family);
+    font-size: var(--btn-font-size);
+    cursor: var(--btn-cursor);
+    box-shadow: var(--btn-box-shadow);
+    transition: var(--btn-box-transition);
+    text-shadow: var(--btn-text-shadow);
+    text-transition: var(--btn-text-shadow);
+    /* transition: background ; */
+    background-color: transparent;
+}
+
+.secondary-button:hover {
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    outline: none;
+    color: #ffffff;
+    background-color: #71bdbe;
+}
+
+.secondary-button:active {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
